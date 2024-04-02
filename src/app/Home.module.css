@@ -1,0 +1,377 @@
+.container {
+    padding: 0 2rem;
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.header {
+    /* h-20: sets a fixed height of 5rem (80px by default) */
+    height: 5rem;
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* w-full: sets width to 100% */
+    width: 100%;
+    /* p-[30px]: sets padding to 30px */
+    padding: 30px;
+    /* text-lg: sets the font size to large (1.125rem by default) */
+    font-size: 1.125rem;
+    /* font-bold: sets the font weight to bold */
+    font-weight: bold;
+    /* items-center: aligns items in the center vertically in a flex container */
+    align-items: center;
+    /* justify-between: spaces out children with space between */
+    justify-content: space-between;
+}
+
+.headerWrapper {
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* justify-center: centers children horizontally in a flex container */
+    justify-content: center;
+    /* h-full: sets height to 100% of the parent element */
+    height: 100%;
+    /* max-w-screen-xl: sets the max width to match Tailwind's screen xl size (1280px by default) */
+    max-width: 1280px;
+    /* px-4: sets horizontal padding to 1rem (16px by default) */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.nav {
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* justify-center: centers children horizontally in a flex container */
+    justify-content: center;
+    /* items-center: aligns items in the center vertically in a flex container */
+    align-items: center;
+    /* gap-[20px]: sets the gap between children to 20px */
+    gap: 20px;
+}
+
+.navItem {
+    /* relative: sets the positioning context to relative */
+    position: relative;
+    /* mr-1: sets right margin to 0.25rem (4px by default) */
+    margin-right: 0.25rem;
+    /* cursor-pointer: sets the cursor to a pointer when hovering over the element */
+    cursor: pointer;
+    /* hover:text-green-500: changes text color on hover (you can use a class or :hover pseudo-class in vanilla CSS) */
+}
+
+.navItem:hover {
+    color: #10B981;
+    /* This is Tailwind's green-500 color */
+}
+
+.navLink {
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* mx-[10px]: sets both left and right margins to 10px */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* .badge: commented out, but I'll translate it in case you need it */
+.badge {
+    /* rounded-full: sets border-radius to 9999px, which makes it fully rounded */
+    border-radius: 9999px;
+    /* bg-blue-600: sets background color (Tailwind's blue-600) */
+    background-color: #2563EB;
+    /* h-1: sets height to 0.25rem (4px by default) */
+    height: 0.25rem;
+    /* w-1: sets width to 0.25rem (4px by default) */
+    width: 0.25rem;
+    /* absolute: sets positioning to absolute */
+    position: absolute;
+    /* bottom-5, right-0, top-1: sets the position in absolute terms (top value seems conflicting with bottom, adjust as needed) */
+    bottom: 1.25rem;
+    /* Adjusted to reflect Tailwind's spacing scale */
+    right: 0;
+    /* ring-4: creates a shadow that simulates an outline; this is a complex utility that might not translate directly */
+    box-shadow: 0 0 0 1rem #2563EB;
+    /* Example, adjust the color and offset to your needs */
+}
+
+.inputContainer {
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* items-center: aligns items in the center vertically in a flex container */
+    align-items: center;
+    /* justify-center: centers children horizontally in a flex container */
+    justify-content: center;
+    /* p-2: sets padding to 0.5rem (8px by default) */
+    padding: 0.5rem;
+    /* rounded: sets a moderate border-radius (0.25rem by default) */
+    border-radius: 0.25rem;
+}
+
+.input {
+    /* bg-transparent: makes the background color transparent */
+    background-color: transparent;
+    /* outline-none: removes the default outline */
+    outline: none;
+    /* text-white: sets the text color to white */
+    color: white;
+    /* w-70: this is not a standard Tailwind class, so I'll assume a width of 70%; adjust as necessary */
+    width: 70%;
+    /* ml-3: sets the left margin to 0.75rem (12px by default) */
+    margin-left: 0.75rem;
+}
+
+.button {
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* justify-center: centers children horizontally in a flex container */
+    justify-content: center;
+    /* items-center: aligns items in the center vertically in a flex container */
+    align-items: center;
+    /* mx-[10px]: sets both left and right margins to 10px */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* bg-orange-500: sets background color to Tailwind's orange-500 */
+    background-color: #F97316;
+    /* w-20: sets a fixed width of 5rem (80px by default) */
+    width: 5rem;
+    /* h-10: sets a fixed height of 2.5rem (40px by default) */
+    height: 2.5rem;
+    /* text-white: sets the text color to white */
+    color: white;
+}
+
+/* Banner */
+.banner {
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* flex-col: stacks items vertically */
+    flex-direction: column;
+    /* w-full: width to 100% */
+    width: 100%;
+    /* h-96: height to 24rem/384px */
+    height: 24rem;
+    /* bg-light-green: sets a light green background color, replace with the actual color code you want */
+    background-color: #78c678;
+    /* Example color, replace with the actual hex code you prefer */
+    /* rounded-2xl: sets large border-radius */
+    border-radius: 1rem;
+    /* p-[50px]: sets padding to 50px */
+    padding: 50px;
+    /* gap-[30px]: sets the gap between flex items to 30px */
+    gap: 30px;
+}
+
+.textWrapper {
+    /* w-6/12: width to 50% */
+    width: 50%;
+}
+
+.headline {
+    /* text-6xl: sets the font size to 4rem */
+    font-size: 3.5rem;
+    /* text-white: sets text color to white */
+    color: white;
+    /* font-semibold: sets font weight to semibold/600 */
+    font-weight: 600;
+    /* pr-11: sets right padding to 2.75rem/44px */
+    padding-right: 2.75rem;
+    line-height: 1;
+    /* This sets the line-height to be the same as the font-size, resulting in reduced space between lines */
+}
+
+.slogin {
+    /* text-3xl: sets the font size to 1.875rem */
+    font-size: 1.875rem;
+    /* text-white: sets text color to white */
+    color: white;
+}
+
+.select {
+    /* bg-neutral-900: sets background color to dark (almost black), replace with the actual color code */
+    background-color: #111827;
+    /* Example color, replace with the actual hex code for neutral-900 */
+    /* text-white: sets text color to white */
+    color: white;
+    /* w-40: width to 10rem/160px */
+    width: 10rem;
+    /* h-12: height to 3rem/48px */
+    height: 3rem;
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* justify-center: centers children horizontally */
+    justify-content: center;
+    /* items-center: centers items vertically */
+    align-items: center;
+    /* rounded-t-xl: sets top border-radius to large */
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    /* font-semibold: sets font weight to semibold/600 */
+    font-weight: 600;
+}
+
+.flightsWrapper {
+    /* w-4/5: width to 80% */
+    width: 80%;
+}
+
+.flightsInfo {
+    /* flex: enables flexbox layout */
+    display: flex;
+    /* h-20: height to 5rem/80px */
+    height: 5rem;
+    /* w-full: width to 100% */
+    width: 100%;
+    /* bg-neutral-50: sets background color to very light grey, replace with the actual color code */
+    background-color: #fafafa;
+    /* Example color, replace with the actual hex code for neutral-50 */
+    /* rounded-b-xl: sets bottom border-radius to large */
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    /* rounded-tr-xl: sets top right border-radius to large */
+    border-top-right-radius: 0.75rem;
+}
+
+/* FindFlights */
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+    /* Tailwind's w-44 is 11rem assuming default config */
+    gap: 0.5rem;
+    /* Tailwind's gap-2 is 0.5rem assuming default config */
+    padding: 8px;
+    /* Tailwind's p-[8px] */
+}
+
+.icon {
+    width: 1.5rem;
+    /* Tailwind's w-6 is 1.5rem assuming default config */
+    height: 1.5rem;
+    /* Tailwind's h-6 is 1.5rem assuming default config */
+    opacity: 0.5;
+}
+
+.inputTitle {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #e2e8f0;
+    /* Tailwind's border-stone-200 */
+    width: 100%;
+    /* Full width of its parent due to flex-grow */
+}
+
+.inputField {
+    outline: 0;
+    width: 8rem;
+    /* Tailwind's w-32 is 8rem assuming default config */
+    height: 1.5rem;
+    /* Tailwind's h-6 is 1.5rem assuming default config */
+    background-color: transparent;
+}
+
+.dateContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    /* Tailwind's w-28 is 7rem assuming default config */
+}
+
+.dateField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* Tailwind's gap-2 is 0.5rem assuming default config */
+    width: 100%;
+    /* Full width of its parent */
+}
+
+.dateTitle {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #e2e8f0;
+    /* Tailwind's border-stone-200 */
+    align-items: center;
+    width: 100%;
+    /* Full width of its parent */
+}
+
+.calendar {
+    cursor: pointer;
+}
+
+.passengerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    /* Tailwind's w-36 is 9rem assuming default config */
+}
+
+.passengerTitle {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #e2e8f0;
+    /* Tailwind's border-stone-200 */
+    align-items: center;
+    width: 100%;
+    /* Full width of its parent */
+}
+
+.passengerField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Full width of its parent */
+}
+
+.dropDown {
+    width: 1.5rem;
+    /* Tailwind's w-6 is 1.5rem assuming default config */
+    height: 1.5rem;
+    /* Tailwind's h-6 is 1.5rem assuming default config */
+    cursor: pointer;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11rem;
+    /* Tailwind's w-44 is 11rem assuming default config */
+}
+
+.searchBtn {
+    background-color: #f97316;
+    /* Tailwind's bg-orange-500 */
+    width: 7rem;
+    /* Tailwind's w-28 is 7rem assuming default config */
+    height: 3.5rem;
+    /* Tailwind's h-14 is 3.5rem assuming default config */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    /* Tailwind's text-xl */
+    color: white;
+    font-weight: 600;
+    /* Tailwind's font-semibold */
+    border-radius: 0.75rem;
+    /* Tailwind's rounded-xl */
+    cursor: pointer;
+}
+
+
+
+
+/* Media Responsiveness */
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
